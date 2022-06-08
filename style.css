@@ -1,0 +1,47 @@
+body{
+    text-align: center;
+}
+
+button{
+    padding: 10px;
+    margin: 10px;
+}
+
+.reset-button{
+    padding: 10px;
+}
+
+.output .points{
+    display: flex;
+    justify-content: center;
+}
+
+.output.human{
+    font-size: medium;
+}
+
+.output .human-points {
+    color: black;
+    font-size: 2.5em;
+}
+
+.output .computer-points{
+    color: black;
+    font-size: 2.5em;
+}
+
+.output .symbol{
+    color: black;
+    font-size: 2.5em;
+}
+
+.output{
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+
+}

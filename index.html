@@ -3,19 +3,32 @@
   <head>
     <meta charset="utf-8">
     <title>JS Game</title>
-  
-    <script type="text/javascript" src="index copy.js"> </script>
-  
+    <link href="style.css" rel="stylesheet">
+    <script type="text/javascript" src="script.js"> </script>
+    
   </head>
 <body>
 
 <h1>Do you wont play a game?</h1>
 <h2>Lets play! Chose Scissors, Paper or Rock</h2>
 
-<p>Click the button to start</p>
+<p>Click the button to chose the weapon</p>
 
-<button onclick="game(prompt())">Start</button>
-
-<p id="demo"></p>
+<div class="output">
+  <div class="points">
+    <div class="human">Human</div>
+    <div class="human-points", id="human-points">0</div>
+    <div class="symbol"> - </div>
+    <div class="computer-points", id="computer-points">0</div>
+    <div class="computet">Computer</div>
+  </div>  
+  <div class="buttons">
+    <button onclick="playRoundWithComputerPlay('Rock'),loseOrWinMessage()">Rock</button>
+    <button onclick="playRoundWithComputerPlay('Paper'),loseOrWinMessage()">Paper</button>
+    <button onclick="playRoundWithComputerPlay('Scissors'),loseOrWinMessage()">Scissors</button>
+  </div>
+  <button class="reset-button", onclick="resetGame()">Reset</button>
+  <p class="lose-or-win", id="lose-or-win"></p>
+</div>
 </body>
 </html>
